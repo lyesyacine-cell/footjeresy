@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootJerseys - Connexion / Inscription</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/login.css">
+   <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="auth-section">
+        <div class="auth-container">
+            <!-- TOGGLE -->
+            <div class="auth-toggle">
+                <button class="toggle-btn active" id="btn-login" onclick="switchToLogin()">🔐 Connexion</button>
+                <button class="toggle-btn" id="btn-register" onclick="switchToRegister()">📝 Inscription</button>
+            </div>
+
+            <!-- FORMULAIRE CONNEXION -->
+            <div id="login-form" class="auth-form active">
+                <h2>Connexion à votre compte</h2>
+                <form onsubmit="submitLogin(event)">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required placeholder="Votre email">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Mot de passe</label>
+                        <input type="password" id="login-password" required placeholder="Votre mot de passe">
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Se souvenir de moi</label>
+                    </div>
+                    <button type="submit" class="auth-btn">Se connecter</button>
+                </form>
+                <p class="auth-link">Mot de passe oublié ? <a href="#" onclick="showToast('Lien de réinitialisation envoyé')">Cliquez ici</a></p>
+            </div>
+
+            <!-- FORMULAIRE INSCRIPTION -->
+            <div id="register-form" class="auth-form">
+                <h2>Créer un nouveau compte</h2>
+                <form onsubmit="submitRegister(event)">
+                    <div class="form-group">
+                        <label for="register-name">Nom Complet</label>
+                        <input type="text" id="register-name" required placeholder="Votre nom complet">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required placeholder="Votre email">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-phone">Téléphone</label>
+                        <input type="tel" id="register-phone" required placeholder="Votre téléphone">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Mot de passe</label>
+                        <input type="password" id="register-password" required placeholder="Au moins 6 caractères">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Confirmer le mot de passe</label>
+                        <input type="password" id="register-confirm" required placeholder="Confirmer votre mot de passe">
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">J'accepte les conditions d'utilisation</label>
+                    </div>
+                    <button type="submit" class="auth-btn">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/header.js"></script>
+    <script src="../javascript/login.js"></script>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">⚽ FootJerseys</div>
+                <p>La référence des maillots de football authentiques. Portez les couleurs de votre club avec fierté.</p>
+                <div class="footer-social">
+                             <a href="#" ><i class="fab fa-facebook"></i></a>
+                    <a href="#" ><i class="fab fa-instagram"></i></a>
+                    <a href="#" ><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" ><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">🏠 Accueil</a></li>
+                    <li><a href="produits.html">👕 Produits</a></li>
+                    <li><a href="apropos.html">ℹ️ À propos</a></li>
+                    <li><a href="contact.html">📞 Contact</a></li>
+                    <li><a href="panier.html">🛒 Panier</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Championnats</h4>
+                <ul>
+                    <li><a href="produits.html?category=Premier+League">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</a></li>
+                    <li><a href="produits.html?category=La+Liga">🇪🇸 La Liga</a></li>
+                    <li><a href="produits.html?category=Serie+A">🇮🇹 Serie A</a></li>
+                    <li><a href="produits.html?category=Bundesliga">🇩🇪 Bundesliga</a></li>
+                    <li><a href="produits.html?category=Ligue+1">🇫🇷 Ligue 1</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>📧 infofootjerseys@gmail.com</p>
+                <p>📞 +213 (0) 000 000 000</p>
+                <p>📍 Tizi Ouzou, Algérie</p>
+                <p>🕐 Dim - Jeu : 8h - 22h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FootJerseys. Tous droits réservés.</p>
+            <p>Maillots 100% authentiques • Livraison rapide • Paiement sécurisé</p>
+        </div>
+    </footer>
+</body>
+</html>

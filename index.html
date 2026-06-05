@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootJerseys - Accueil</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <div id="header-placeholder"></div>
+
+    <!-- Barre de recherche -->
+    <div class="products-search">
+        <input type="text" id="searchInput" placeholder="Rechercher un maillot..." oninput="searchAndRedirect()">
+        <button onclick="searchAndRedirect()" class="search-btn">🔎 Rechercher</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Bienvenue chez FootJerseys</h1>
+        <p>Découvrez les plus beaux maillots de football des plus grands clubs du monde</p>
+        <a href="content/produits.html" class="hero-btn">Commencer vos achats</a>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2 class="section-title">Nos Championnats</h2>
+        <div class="categories-grid">
+            <a href="content/produits.html?category=Premier+League" class="category-card">
+                <div class="category-image"><img src="images/unnamed.png" alt="Premier League"></div>
+                <div class="category-info">
+                    <h3>Premier League</h3>
+                    <p>Les meilleurs clubs anglais</p>
+                </div>
+            </a>
+            <a href="content/produits.html?category=La+Liga" class="category-card">
+                <div class="category-image"><img src="images/laliga-001-illus.jpg" alt="La Liga"></div>
+                <div class="category-info">
+                    <h3>La Liga</h3>
+                    <p>Les légendes espagnoles</p>
+                </div>
+            </a>
+            <a href="content/produits.html?category=Serie+A" class="category-card">
+                <div class="category-image"><img src="images/Logo_Serie_A.svg.png" alt="Serie A"></div>
+                <div class="category-info">
+                    <h3>Serie A</h3>
+                    <p>L'élite italienne</p>
+                </div>
+            </a>
+            <a href="content/produits.html?category=Bundesliga" class="category-card">
+                <div class="category-image"><img src="images/Bundesliga-logo.svg.png" alt="Bundesliga"></div>
+                <div class="category-info">
+                    <h3>Bundesliga</h3>
+                    <p>Les machines allemandes</p>
+                </div>
+            </a>
+            <a href="content/produits.html?category=Ligue+1" class="category-card">
+                <div class="category-image"><img src="images/Logo_Ligue_1_2024.jpg.webp" alt="Ligue 1"></div>
+                <div class="category-info">
+                    <h3>Ligue 1</h3>
+                    <p>Les meilleures équipes françaises</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <div class="feature">
+                <div class="feature-icon">🚚</div>
+                <h3>Livraison Rapide</h3>
+                <p>Livraison gratuite pour les commandes de plus de 50€</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3>Paiement Sécurisé</h3>
+                <p>Transactions 100% sécurisées</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">↩️</div>
+                <h3>Retour Facile</h3>
+                <p>Retour gratuit sous 30 jours</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💬</div>
+                <h3>Support 24/7</h3>
+                <p>Une équipe toujours prête à vous aider</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="javascript/products-data.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/main.js"></script>
+    <script>
+     
+    </script>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">⚽ FootJerseys</div>
+                <p>La référence des maillots de football authentiques. Portez les couleurs de votre club avec fierté.</p>
+                <div class="footer-social">
+                    <a href="#" ><i class="fab fa-facebook"></i></a>
+                    <a href="#" ><i class="fab fa-instagram"></i></a>
+                    <a href="#" ><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" ><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">🏠 Accueil</a></li>
+                    <li><a href="content/produits.html">👕 Produits</a></li>
+                    <li><a href="content/apropos.html">ℹ️ À propos</a></li>
+                    <li><a href="content/contact.html">📞 Contact</a></li>
+                    <li><a href="content/panier.html">🛒 Panier</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Championnats</h4>
+                <ul>
+                    <li><a href="content/produits.html?category=Premier+League">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</a></li>
+                    <li><a href="content/produits.html?category=La+Liga">🇪🇸 La Liga</a></li>
+                    <li><a href="content/produits.html?category=Serie+A">🇮🇹 Serie A</a></li>
+                    <li><a href="content/produits.html?category=Bundesliga">🇩🇪 Bundesliga</a></li>
+                    <li><a href="content/produits.html?category=Ligue+1">🇫🇷 Ligue 1</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>📧 infofootjerseys@gmail.com</p>
+                <p>📞 +213 (0) 000 000 000</p>
+                <p>📍 Tizi Ouzou, Algérie</p>
+                <p>🕐 Dim - Jeu : 8h - 22h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FootJerseys. Tous droits réservés.</p>
+            <p>Maillots 100% authentiques • Livraison rapide • Paiement sécurisé</p>
+        </div>
+    </footer>
+</body>
+</html>

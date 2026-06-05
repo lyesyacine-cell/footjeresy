@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootJerseys - Produits</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/produits.css">
+     <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <!-- Barre de recherche -->
+    <div class="products-search">
+        <input type="text" id="searchInput" placeholder="Rechercher un maillot...">
+        <button onclick="searchProducts()" class="search-btn">🔎 Rechercher</button>
+    </div>
+
+    <section class="products">
+        <div class="products-container">
+            <h2 class="section-title">Nos Maillots</h2>
+            <div class="products-filter">
+                <button class="filter-btn active" onclick="showAllProducts()">Tous les produits</button>
+                <button class="filter-btn" onclick="filterByCategory('Premier League')">Premier League</button>
+                <button class="filter-btn" onclick="filterByCategory('La Liga')">La Liga</button>
+                <button class="filter-btn" onclick="filterByCategory('Serie A')">Serie A</button>
+                <button class="filter-btn" onclick="filterByCategory('Ligue 1')">Ligue 1</button>
+                <button class="filter-btn" onclick="filterByCategory('Bundesliga')">Bundesliga</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Produits insérés par JS -->
+            </div>
+        </div>
+    </section>
+
+    <script src="../javascript/products-data.js"></script>
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/header.js"></script>
+    <script src="../javascript/produits.js"></script>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">⚽ FootJerseys</div>
+                <p>La référence des maillots de football authentiques. Portez les couleurs de votre club avec fierté.</p>
+                <div class="footer-social">
+                               <a href="#" ><i class="fab fa-facebook"></i></a>
+                    <a href="#" ><i class="fab fa-instagram"></i></a>
+                    <a href="#" ><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" ><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">🏠 Accueil</a></li>
+                    <li><a href="produits.html">👕 Produits</a></li>
+                    <li><a href="apropos.html">ℹ️ À propos</a></li>
+                    <li><a href="contact.html">📞 Contact</a></li>
+                    <li><a href="panier.html">🛒 Panier</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Championnats</h4>
+                <ul>
+                    <li><a href="produits.html?category=Premier+League">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</a></li>
+                    <li><a href="produits.html?category=La+Liga">🇪🇸 La Liga</a></li>
+                    <li><a href="produits.html?category=Serie+A">🇮🇹 Serie A</a></li>
+                    <li><a href="produits.html?category=Bundesliga">🇩🇪 Bundesliga</a></li>
+                    <li><a href="produits.html?category=Ligue+1">🇫🇷 Ligue 1</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>📧 infofootjerseys@gmail.com</p>
+                <p>📞 +213 (0) 000 000 000</p>
+                <p>📍 Tizi Ouzou, Algérie</p>
+                <p>🕐 Dim - Jeu : 8h - 22h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FootJerseys. Tous droits réservés.</p>
+            <p>Maillots 100% authentiques • Livraison rapide • Paiement sécurisé</p>
+        </div>
+    </footer>
+</body>
+</html>
